@@ -33,4 +33,4 @@ Maven可以选择配置$M2_HOME/conf/settings.xml或者~/.m2/settings.xml文件,
 ### 1.7 不要使用IDE自带的maven
 版本新，可能不稳定
 ### 1.8 eclipse加载外部maven
-![1.1.7](1.1.7.png)
+![1.1.7](image/1.1.7.png)
