@@ -21,6 +21,9 @@
 ### 1.5 使用maven命令打包
 1. 执行mvm clean package 默认生成jar文件,文件默认在target目录
 2. 执行maven clean install 将jar文件安装到本地maven仓库
+```
+mvn install:install-file -Dfile=E:\workspace\aggregate-pay\lib\alipay-sdk-java-ALL20171201155700.jar -DgroupId=com.techown.alipay -DartifactId=alipay-sdk-java-ALL -Dversion=20171201155700 -Dpackaging=jar
+```
 3. 命令包含关系 install-package-test-compile，建议每个命令前都加clean
 4. 默认情况下打包生成的jar是无法运行的，因为带有main方法的类，不会添加到manifest中。为生成可执行jar文件，需要借助maven-shade-plugin插件
 ### 1.6 使用Archetype生成项目骨架（不重要一般都是用IDE工具，下一张将，介绍）
